@@ -1,0 +1,13 @@
+name: Self-Hosted Agent Example
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: self-hosted # Make sure you keep it as self-hosted 
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Run script on self-hosted agent
+      run: |
+        echo "Hello from self-hosted agent!"
