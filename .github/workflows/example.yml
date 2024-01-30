@@ -4,7 +4,7 @@ on:
     branches: [ main ]
 jobs:
   build:
-    runs-on: self-hosted # Make sure you keep it as self-hosted 
+    runs-on: arc-runners # Make sure you keep it as self-hosted 
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
